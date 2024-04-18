@@ -32,31 +32,75 @@
         align-items: center;
         background-color: white;
       }
-      a {
+      nav a {
         color: black;
         cursor: pointer;
       }
-      img {
+      /* img {
         display: none;
         width: 300px;
         padding: 50px;
         border-radius: 50%; /* This creates a circular shape */
         /* overflow: hidden; */
-      }
+      } */
 
       main {
         /* height: auto; */
       }
 
-      .main-section {
+      .hero-section {
         padding: 50px;
         display: flex;
         align-items: center;
         justify-content: space-around;
+        height: 600px;
       }
       .main-list {
         line-height: 1.8em;
         margin-top: 20px;
+      }
+
+      .skillset-section {
+        text-align: center;
+        text-decoration: underline;
+        height: 600px;
+        padding: 100px;
+      }
+
+      #skillset,
+      #cert {
+        text-align: center;
+        text-decoration: underline;
+      }
+      #skillset-subtitle,
+      #cert-subtitle {
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .fr-div {
+        margin-top: 50px;
+      }
+      .techstack {
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+      }
+
+      .framework {
+        /* background-color: aquamarine; */
+        /* text-align: center;
+        align-content: center;
+        vertical-align: auto;
+        padding: 10px; */
+      }
+
+      .badges {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 50px
       }
     </style>
   </head>
@@ -67,7 +111,7 @@
         <a href="#">Daily</a>
       </nav>
     </header>
-    <main class="main-section">
+    <main class="hero-section">
       <!-- <div class="left-div">
         <img src="mhjhamza.png" />
       </div> -->
@@ -104,11 +148,92 @@
             <li>Authoring a Best-Selling Book.</li>
           </ul>
 
-          <li>100% Job Success Score on Upwork</li>
+          <li><strong>100% Job Success Score</strong> on Upwork</li>
 
-          <li>Top-Rated on Upwork</li>
+          <li><strong>Top-Rated</strong> on Upwork</li>
         </ul>
       </div>
     </main>
+    <section class="skillset-section">
+      <h2 id="skillset">Skillset</h2>
+      <p id="skillset-subtitle">Full-Stack Engineer</p>
+
+      <div class="fr-div" style="text-align: center">
+        <h3 class="techstack">Frontend Development</h3>
+        <a class="framework" href="#"> HTML5</a>
+        |
+        <a class="framework" href="#"> CSS</a>
+        |
+        <a class="framework" href="#"> Javascript</a>
+        |
+        <a class="framework" href="#"> ReactJS</a>
+        |
+        <a class="framework" href="#"> VueJS</a>
+        |
+        <a class="framework" href="#"> NextJS</a>
+        |
+        <a class="framework" href="#"> WordPress</a>
+        |
+        <a class="framework" href="#"> WIX</a>
+
+        <h3 class="techstack">Backend Development</h3>
+        <a class="framework" href="#"> ExpressJS</a>
+        |
+        <a class="framework" href="#"> NodeJS</a>
+        |
+        <a class="framework" href="#"> Python Django</a>
+        |
+        <a class="framework" href="#"> Python Flask</a>
+        |
+        <a class="framework" href="#"> AWS Chalice</a>
+        |
+        <a class="framework" href="#"> FastAPI</a>
+
+        <h3 class="techstack">Data Engineering</h3>
+
+        <a class="framework" href="#"> PostgreSQL</a>
+        |
+        <a class="framework" href="#"> MySQL</a>
+        |
+        <a class="framework" href="#"> MongoDB</a>
+        |
+        <a class="framework" href="#"> DynamoDB</a>
+        |
+        <a class="framework" href="#"> RedShift</a>
+        |
+        <a class="framework" href="#"> Glue</a>
+        |
+        <a class="framework" href="#"> Athena</a>
+        |
+        <a class="framework" href="#"> RedShift</a>
+
+        <h3 class="techstack">DevOps</h3>
+        <a class="framework" href="#"> Terraform</a>
+        |
+        <a class="framework" href="#"> CI/CD</a>
+        |
+        <a class="framework" href="#"> CloudFormation</a>
+        |
+        <a class="framework" href="#"> Elastic Beanstalk</a>
+      </div>
+    </section>
+    <section class="certifications">
+      <h2 id="cert">Certifications</h2>
+      <p id="cert-subtitle">All certifications I've done</p>
+      <div class="badges">
+        <img
+          style="width: 100px"
+          src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png"
+        />
+        <img
+          style="width: 100px"
+          src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png"
+        />
+        <img
+          style="width: 100px"
+          src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png"
+        />
+      </div>
+    </section>
   </body>
 </html>
