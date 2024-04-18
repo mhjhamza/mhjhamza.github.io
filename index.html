@@ -1,331 +1,107 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MHJHamza</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    />
+    <style>
+      * {
+        font-family: "Lato", sans-serif;
+        margin: 0px;
+        color: #6b6b6b;
+      }
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
+      body {
+        /* background-color: rgb(213, 213, 213); */
+        /* background-image: linear-gradient(to right, #ff7e5f, #feb47b); */
+        background-image: linear-gradient(to right, #fff, #ededed);
+      }
 
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
+      nav {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        background-color: white;
+      }
+      a {
+        color: black;
+        cursor: pointer;
+      }
+      img {
+        width: 300px;
+        padding: 50px;
+        border-radius: 50%; /* This creates a circular shape */
+        /* overflow: hidden; */
+      }
+
+      .main-section {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .main-list {
+        line-height: 1.8em;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            
-
-            <li>
-                <a href="#certifications">Certifications</a>
-            </li>
-
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            
-        </ul>
+      <nav>
+        <h1>MHJHamza</h1>
+        <a href="#">Daily</a>
+      </nav>
     </header>
-    <!-- End header -->
+    <main class="main-section">
+      <div class="left-div">
+        <img src="mhjhamza.png" />
+      </div>
+      <div class="right-div">
+        <h2>Hi, I'm Muhammad Hamza Javed</h2>
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Muhammad Hamza Javed</h1>
-            <h2>Senior Software Engineer</h2>
-            <a href="Muhammad-Hamza-Javed-SSE-ML-DL.pdf" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
+        <ul class="main-list">
+          <li>
+            I build <strong>products</strong> for
+            <strong>bootstrapping entrepreneurs</strong>.
+          </li>
 
-        <div id="lead-overlay"></div>
+          <li>I’ve been doing this for <strong>7 years.</strong></li>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+          <li>
+            I’ve acquired <strong>50+ Tech Certificates</strong> along the way.
+          </li>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        In the process of becoming CTO of a Fortune 500 company a few years from now. <br><br>
-                        Muhammad Hamza Javed is an AWS Certified Solutions Architect - Associate, an AWS Certified Developer, a Packt Author, and a Data Science enthusiast primarily working on Machine Learning, Deep Learning, and Computer Vision. He has hands-on experience working with AWS services such as EC2, EBS, IAM, S3, ELB, RDS, VPC, etc. He possesses a Bachelor's Degree in Computer Science from GC University and forty-three (43) certificates in Data Science, Machine Learning, Deep Learning, and Big Data from Coursera and LinkedIn as of August 2018 - That clearly depicts his passion for his work. 
-                        In the process of becoming CTO of a Fortune 500 company a few years from now. <br><br>
+          <li>
+            I trained <strong>29,000 engineers</strong> world-wide on Udemy.
+          </li>
 
-                        He founded GroupieApp which emerged from his final year project and got attention from local news and technology blogs including DAWN, TechJuice, and City42. GroupieApp was 1st Runner-up in the Business Idea competition at Startup Weekend LUMS. It also earned the 'Best Mobile App' award in Software Exhibition at PUCIT. During college, he founded WeTuitionites which is an educational institution where school-going kids were taught computer science skills.
-                        In the process of becoming CTO of a Fortune 500 company a few years from now. <br><br>
+          <li>
+            I find inspiration in <strong>self-help/business</strong> books.
+          </li>
 
-                        He's a go-getter - He started working at the age of 17 and by the time he was graduated he had accomplished five (5) internships in various local and overseas companies. He had worked on fifteen (15) mobile application during his academic journey. 
-                        In the process of becoming CTO of a Fortune 500 company a few years from now. <br><br>
+          <li>I’ve 3 life-goals:</li>
 
-                        <br>Recent Accomplishments as of 2019:<br>
-                        1) AWS Certified Solutions Architect - Associate<br>
-                        2) AWS Certified Developer - Associate<br>
-                        3) Packt Author - Computer Vision Course<br>
-                        4) 100DaysOfMLCode<br>
-                        In the process of becoming CTO of a Fortune 500 company a few years from now. <br><br>
+          <ul>
+            <li>Becoming CTO of a Fortune500 company.</li>
 
-                        If you want someone on your team who has extensive knowledge of bleeding-edge solutions in:<br>  
-                        - AWS Cloud Computing,<br>
-                        - Data Science, <br>
-                        - Machine Learning, <br>
-                        - Deep Learning, and <br>
-                        - Computer Vision - You're at the right profile.<br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
+            <li>Becoming a TED Speaker.</li>
 
-    <!-- End #experience -->
-<br>
+            <li>Authoring a Best-Selling Book.</li>
+          </ul>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="October 2018 – Present">
-                <h3>Northbay Solutions</h3>
-                <h4>Senior Software Engineer / Machine Learning / Deep Learning</h4>
-                <p>
-                   At Northbay Solutions, I’ve been working on AWS Services including API Gateway, Lambda, DynamoDB, RDS, MediaServices, EC2, EBS, IAM, S3, ELB, and Cognito. The core responsibilities involved developing backend API to be deployed on serverless platform. Making sure the smooth integration with other backend APIs and AWS services.
+          <li>100% Job Success Score on Upwork</li>
 
-                  <br>                  <br>
-                  <br><strong>Core Responsibilities:</strong><br>
-                        - Working closely with CXO / SME<br>
-                        - Developing serverless backend with API Gateway & Lambda<br>
-                        - Worked on Analytics, Videos, Channels and User related APIs<br>
-                        - Google IAP integration with backend<br>
-                        - Modified existing APIs to add new features<br>
-                        - Managing Dev DB<br>
-                        - Deployment on Dev & QA<br>
-                        - Machine Learning & Deep Learning Solutions.<br>
-                </p>
-            </div>
-
-            <div data-date="September 2018 – Present">
-                <h3>Packt | Udemy | O'Reilly</h3>
-                <h4>Author of two online video courses</h4>
-                <p>
-                    The courses helps you learn the core concepts of OpenCV faster by taking a recipe-based approach where you can try out different code snippets to understand a concept. Every operation is performed step-by-step and the code is neatly documented so it’s easier for the audience to reuse the modules in their own projects.
-
-                </p>
-            </div>
-
-
-            <div data-date="September 2015 – June 2017">
-                <h3>Groupie App</h3>
-                <h4>Founder & CEO</h4>
-                <p>
-                    Groupie allows people based in different geographical locations to take group selfies – as if they were together. The app will allow people to add their friends to their Groupie app network and send them group selfie requests. <br><br>
-
-                    • Best Mobile App Award at SoftExpo'17 PUCIT.<br>
-                    • 1st Runner Up at Start-up Weekend Lahore LUMS<br>
-                    • Shortlisted for the final round at LUMS Centre for Entrepreneurship.<br>
-                    • Mentioned in TechJuice<br>
-                    • Featured in Aurora by DAWN.<br>
-                    • Seen on City42<br><br>
-
-                    Read complete article here: http://aurora.dawn.com/news/1141851<br>
-                </p>
-            </div>
-
-            
-
-
-            <div data-date="June 2017 – October 2018 ">
-                <h3>FiveRivers Technologies</h3>
-                <h4>Machine Learning & Vision Engineer</h4>
-                <p>
-                    As a machine learning engineer, I was entrusted to transmute ideas into products. During my stay at FiveRivers, I worked on machine learning / deep learning and computer vision projects. Here I worked with the CXO directly to understand their vision for the upcoming ML product and then eloquently shared feedback what worked and what improvements can we make in our machine learning pipeline. Meanwhile, I developed three projects ground-up: <br>
-                    <br>
-                    1) Parcel Detection and Tracking System for the world’s largest logistics company; <br>
-                    2)Anti-drone (Autonomous Drone Tracking) System for surveillance;<br>
-                    3) and Predictive Modeling / Intelligent coach for a basketball app called Ballogy.<br>
-                    <br>
-                    Core Responsibilities:<br>
-                    - Working closely with CXO / SME<br>
-                    - Machine Learning & Deep Learning Solutions.<br>
-                    - Data Science & Predictive Modeling.<br>
-                    - Visualization with Matplotlib | Seaborn.<br>
-                    - Computer Vision, Object Detection & Action Recognition.<br>
-                    - Research & Development Computer Vision Algorithms, SSD, RFCN.<br>
-                    - Preprocessing, Feature Engineering & Handling Large Datasets.<br>
-                    - Dataset Annotation & Augmentation.<br>
-                    - Creating Deep Learning Models.<br>
-                    - Training & Testing the Models<br>
-                    - Amazon AWS, AWS ML API, Sage-Maker.
-                </p>
-            </div>
-
-            
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Government College University</h3>
-            <span class="education-date">November 2013 - June 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            
-        </div>
-        <!-- End .education-block -->
-
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p2.jpg" width="300px" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Autonomous Drone Detection & Tracking </h3>
-                        <p>
-                            A US-based surveillance company wanted to monitor UAV and keep tracking its activities until it exits the field of view using deep learning techniques. It was a Deep Learning CNN based Object Detection System to be deployed in fields capable of observing the aerial view, identifying an elevated object that enters the field and tracking it until it exits the field of view. This included calibrating custom-made hardware with system, training object detection model for QuadCopter and writing an intelligent script to track the objects in 360 degrees.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p1.jpg" width="300px" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Parcel Detection & Tracking System - Computer Vision</h3>
-                        <p>
-                            One of the world’s largest Logistics Company wanted to optimize their delivery process using Artificial Intelligence. Deep Learning based project that involved transmuting an idea of parcel delivery system to a POC staged product; It involved research work, applying cutting-edge AI techniques and applying those techniques to train a machine learning model to successfully detect, scan and track the parcels in real-world environment.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p3.jpg" width="300px" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Basket Ball AI Coach</h3>
-                        <p>
-Ballogy is revolutionizing the way youth and amateur athletes prepare for their sports by introducing a standardized testing and analytics software platform that sets the industry standard for collecting and tracking key performance indicators. Applied predictive modeling on a dataset of basketball players from the sports app. This involved data cleansing, preparation, visualization and application of different ML models to predict and find the correlations between players input features and players’ performance results in each test.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-
-
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li> Python</li>
-            <li> CDA</li>
-            <li> CSA</li>
-            <li> Machine Learning</li>
-            <li> SageMaker</li>
-            <li> Deep Learning</li>
-            <li> Data Science</li>
-            <li> Computer Vision</li>
-            <li> OpenCV</li>
-            <li> PySpark</li>
-            <li> Lambda</li>
-            <li> API Gateway</li>
-            <li> RDS</li>
-            <li> S3</li>
-            <li> Neptune</li>
-            <li> SSM</li>
-            <li> AWS Media Services</li>
-            <li> Bash</li>
-            <li> Tensorflow</li>
-            <li> Keras.</li>
+          <li>Top-Rated on Upwork</li>
         </ul>
-    </div>
-    <!-- End #skills -->
-
-    
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2019 MUHAMMAD HAMZA JAVED
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/mhjhamza" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/mhjhamza" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/muhammadhamzajaved" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/mhjhamza" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-</body>
-
+      </div>
+    </main>
+  </body>
 </html>
