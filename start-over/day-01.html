@@ -75,7 +75,7 @@
       }
       #skillset-subtitle,
       #cert-subtitle,
-      #cs-subtitle {
+      #cs-subtitle,#dayCounter {
         margin-top: 15px;
         text-align: center;
       }
@@ -130,6 +130,7 @@
     <section>
       <h2 id="cs" style="margin-top: 100px">100DaysOfStartingOver</h2>
       <p id="cs-subtitle">Starting over...</p>
+      <h2 id="dayCounter"></h2>
 
       <div>
         <div
@@ -228,14 +229,30 @@
             </ul>
 
             <br />
+            <a href="../index.html">Previous Day</a> |
+            <a href="/start-over/day-02.html">Next Day</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- <section style="padding: 200px"></section> -->
     <script>
-      //   window.scrollTo(0, document.body.scrollHeight);
+      // Function to calculate the day difference
+      function calculateDayDifference(startDate) {
+        var today = new Date();
+        var start = new Date(startDate);
+        var timeDiff = Math.abs(today.getTime() - start.getTime());
+        var dayDifference = Math.ceil(timeDiff / (1000 * 3600 * 24));
+        return dayDifference;
+      }
+
+      // Get the day difference and update the h2 tag
+      window.onload = function () {
+        var startDate = "2024-04-19";
+        var dayDifference = calculateDayDifference(startDate);
+        document.getElementById("dayCounter").innerText =
+          "Today is Day " + (dayDifference + 1).toString().padStart(2, "0");
+      };
     </script>
   </body>
 </html>
