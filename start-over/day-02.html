@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MHJHamza</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    />
+    <style>
+      * {
+        font-family: "Lato", sans-serif;
+        margin: 0px;
+        color: #6b6b6b;
+      }
+
+      body {
+        /* background-color: rgb(213, 213, 213); */
+        /* background-image: linear-gradient(to right, #ff7e5f, #feb47b); */
+        background-image: linear-gradient(to right, #fff, #ededed);
+        width: auto;
+        /* background-color: aqua; */
+      }
+
+      nav {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        background-color: white;
+      }
+      nav a {
+        color: black;
+        cursor: pointer;
+      }
+      /* img {
+        display: none;
+        width: 300px;
+        padding: 50px;
+        border-radius: 50%; /* This creates a circular shape */
+        /* overflow: hidden; */
+      } */
+
+      main {
+        /* height: auto; */
+      }
+
+      .hero-section {
+        /* padding: 50px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 600px;
+      }
+      .main-list {
+        line-height: 1.8em;
+        margin-top: 20px;
+      }
+
+      .skillset-section {
+        text-align: center;
+        text-decoration: underline;
+        height: 600px;
+        padding: 0px 100px;
+      }
+
+      #skillset,
+      #cert,
+      #cs {
+        text-align: center;
+        text-decoration: underline;
+      }
+      #skillset-subtitle,
+      #cert-subtitle,
+      #cs-subtitle,#dayCounter {
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .fr-div {
+        margin-top: 50px;
+      }
+      .techstack {
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+      }
+
+      .certifications {
+        /* background-color: aquamarine; */
+        /* text-align: center;
+        align-content: center;
+        vertical-align: auto;
+        padding: 10px; */
+        margin-top: 50px;
+      }
+
+      .badges {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 50px
+      }
+
+      li {
+        padding: 15px
+      }
+
+      .backlog {
+              font-size: 20px;
+              color: red;
+
+            }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><a href="../index.html">MHJHamza</a></h1>
+        <a href="https://www.linkedin.com/in/mhjhamza" target="_blank"
+          >LinkedIn</a
+        >
+      </nav>
+    </header>
+
+    <section>
+      <h2 id="cs" style="margin-top: 100px">100DaysOfStartingOver</h2>
+      <p id="cs-subtitle">Starting over...</p>
+      <h2 id="dayCounter"></h2>
+
+      <div>
+        <div
+          style="
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            padding: 80px;
+            /* justify-content: space-around; */
+            gap: 80px;
+          "
+        >
+          <div style="align-content: right">
+            <h2 style="font-size: 120px">02</h2>
+            <p style="text-align: right"><strong>April 19, 2024</strong></p>
+            <p style="text-align: right; margin-top: 5px">Friday</p>
+          </div>
+          <div>
+            <h2>Today's Achievement</h2>
+            <p style="width: 600px; margin-top: 20px; line-height: 1.8em"></p>
+            <p style="width: 600px; margin-top: 20px">
+              ✔️ Static Website with HTML / CSS
+            </p>
+
+            <br />
+            <br />
+            <h2>Tomorrow's Plan</h2>
+
+            <ul class="chall" style="padding-top: 20px">
+              <li>asda</li>
+            </ul>
+            <h2>100 Days Backlog...</h2>
+
+            <ul class="backlog" style="padding-top: 20px">
+              <li>
+                <span style="color: red"
+                  >Day 30 | Just learn and don't try to make money.</span
+                >
+              </li>
+              <li>Day 31 | Build a solid web-dev portfolio on mhjhamza.com</li>
+              <li>Day 32 | Register on at least 5 freelancing platforms.</li>
+              <li>Day 33 | Build Strategy for Upwork.</li>
+              <li>Day 34 | Build Productivity Tool for Upwork.</li>
+              <li>Day 35 | Do nothing, but send proposals on Upwork.</li>
+              <li>Day 36 | Build a strategy for Remote Work.</li>
+              <li>Day 37 | Meeting inspirations. (hate meetings)</li>
+              <li>Day 38 | Build strategy for supply-side.</li>
+              <li>Day 39 | WTF Sales!</li>
+              <li>
+                Day 40 | Today you're making $3,000 a month<br /><br />
+                <hr />
+                Even if it's not true, it's okay Hamza. It's actually hard!:)
+                <hr />
+              </li>
+              <li>
+                <span style="color: red"
+                  >Day 40-70 | Learn DevOps and don't try to make money.</span
+                >
+              </li>
+              <li>
+                Day 71 | Try to make money, find clients, find remote work
+              </li>
+
+              <li>Goal: $1 Million before 30</li>
+            </ul>
+
+            <br />
+            <a href="/start-over/day-01.html">Previous Day</a> |
+            <a href="../index.html">Next Day</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Function to calculate the day difference
+      function calculateDayDifference(startDate) {
+        var today = new Date();
+        var start = new Date(startDate);
+        var timeDiff = Math.abs(today.getTime() - start.getTime());
+        var dayDifference = Math.ceil(timeDiff / (1000 * 3600 * 24));
+        return dayDifference;
+      }
+
+      // Get the day difference and update the h2 tag
+      window.onload = function () {
+        var startDate = "2024-04-19";
+        var dayDifference = calculateDayDifference(startDate);
+        document.getElementById("dayCounter").innerText =
+          "Today is Day " + (dayDifference + 1).toString().padStart(2, "0");
+      };
+    </script>
+  </body>
+</html>
